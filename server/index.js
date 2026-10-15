@@ -22,7 +22,7 @@ app.post("/api/scan-payment", async (req, res) => {
       });
     }
 
-    const { image } = req.body;
+    const image = req.body.imageDataUrl || req.body.image;
 
     if (!image || typeof image !== "string" ||
         !/^data:image\/(png|jpeg|jpg|webp);base64,/.test(image)) {
