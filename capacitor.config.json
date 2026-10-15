@@ -1,0 +1,6 @@
+{
+  "appId": "com.baapkepaise.app",
+  "appName": "BaapKePaise",
+  "webDir": "public",
+  "server": { "androidScheme": "https" }
+}
